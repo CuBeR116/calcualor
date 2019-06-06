@@ -10,12 +10,18 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/productsList.php';
 
 $APPLICATION->echoIncludedCSS();
-$APPLICATION->echoIncludedJS();
 
 ?>
 
 <div class="calc-block">
   <script>
-    Calc.calcRender(<?= $prepareCalc->getProductJSON('Гармония 1690*860'); ?>)
+    window.onload = function() {
+      Calc.calcRender(<?= $prepareCalc->getProductJSON('Гармония 1690*860'); ?>);
+    };
   </script>
 </div>
+
+<?php
+$APPLICATION->includeFile('/template/modal.php');
+$APPLICATION->echoIncludedJS();
+?>

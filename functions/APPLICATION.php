@@ -36,4 +36,13 @@ class APPLICATION
       echo '<link rel="stylesheet" href="' . $CSS . '">';
     }
   }
+  public function includeFile($name) {
+    $file = $_SERVER['DOCUMENT_ROOT'] . $name;
+    if(file_exists($file)) {
+      require_once $file;
+    }
+    else {
+      return false;
+    }
+  }
 }

@@ -306,10 +306,13 @@ class Calc {
           $('<button>', {
             type: 'button',
             html: 'Заказать',
+            class: 'form-modal__button',
             'data-target': 'modal',
+            'data-modal': '#feedback',
           }),
           $('<input>', {
             type: 'submit',
+            class: 'form-submit__buy',
             value: 'Купить в кредит',
           }),
           $('<input>', {
@@ -385,6 +388,10 @@ class Calc {
                 $('<div>', {
                   class: 'calc__price-item',
                   html: [
+                    $('<p>', {
+                      class: 'calc__price-discount',
+                      html: 'Акция!',
+                    }),
                     $('<div>', {
                       class: 'calc__price-top',
                       html: [
@@ -393,7 +400,7 @@ class Calc {
                           class: 'calc__price-text'
                         }),
                         $('<span>', {
-                          html: this.priceFormat(JSON.PRICE),
+                          html: this.priceFormat(JSON.PRICE) + ' руб.',
                           'data-price': 'original',
                           class: 'calc__price-original'
                         }),
@@ -403,9 +410,9 @@ class Calc {
                       class: 'calc__price-bottom',
                       html: [
                         $('<span>', {
-                          html: this.priceFormat(JSON.PRICE * 0.75),
+                          html: this.priceFormat(JSON.PRICE * 0.75) + ' руб.',
                           'data-price': 'discount',
-                          class: 'calc__price-discount'
+                          class: 'calc__price-discount__val'
                         })
                       ]
                     })
@@ -500,8 +507,8 @@ class Calc {
       }
 
 
-      Calc.originalPriceBlock.html(Calc.priceFormat(Calc.price));
-      Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75));
+      Calc.originalPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');
+      Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75) + ' руб.');
 
       console.log(price);
     });
@@ -545,8 +552,8 @@ class Calc {
 
 
         input.val(Number(input.val()) + Number(value));
-        Calc.originalPriceBlock.html(Calc.priceFormat(Calc.price));
-        Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75));
+        Calc.originalPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');
+        Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75) + ' руб.');
 
         if (input.data('global-count') === '') {
         }
@@ -589,6 +596,7 @@ function orderBank() {
     let itemElement = form.find('[name="itemName_0"]');
     let strItems = '';
     let child;
+    if(Calc.count === undefined) Calc.count = 1;
 
     strItems = form.find('[name="productName"]').val() + ' x' + Calc.count.toString() + '; ';
 

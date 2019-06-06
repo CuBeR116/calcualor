@@ -23,6 +23,10 @@ require_once __DIR__ . '/APPLICATION.php';
  * 'OPTIONS' -> 'AFTER' -> После выбора какого аттрибиута отображать
  */
 
+//$objProduct['Гармония 1690*860'] =
+
+//$garmony1690x860 =
+
 $arProduct['Гармония 1690*860'] = [
   'NAME'    => 'Кровать серии ГАРМОНИЯ 1690*860',
   'PRICE'   => 13200,
@@ -90,6 +94,7 @@ $APPLICATION = new APPLICATION();
 
 
 $APPLICATION->includeJS('/js/jquery-3.4.1.min.js');
+$APPLICATION->includeJS('/js/modal.js');
 $APPLICATION->includeJS('/js/template.js');
 
 $APPLICATION->includeCSS('/css/bootstrap.min.css');
