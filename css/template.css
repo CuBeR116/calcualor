@@ -28,6 +28,7 @@
 .calc__photo-items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .calc__photo-item:hover {
@@ -52,6 +53,7 @@
 
 .calc-right {
   width: 60%;
+  padding-left: 2em;
 }
 
 .calc__select__item {
@@ -92,7 +94,7 @@
 }
 
 .calc__select__active-item:after {
-  content: '▽';
+  content: 'â–½';
   position: absolute;
   right: 0;
   width: 50px;

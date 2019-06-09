@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71d8f059-2ada-4465-ab01-3cc0ec6ab912" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/modal.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/modal.php" afterDir="false" />
-    </list>
+    <list default="true" id="71d8f059-2ada-4465-ab01-3cc0ec6ab912" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="625">
-              <caret line="403" column="1" selection-start-line="403" selection-start-column="1" selection-end-line="403" selection-end-column="1" />
+              <caret line="405" column="1" selection-start-line="405" selection-start-column="1" selection-end-line="405" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -51,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/modal.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -165,13 +161,13 @@
         <option value="$PROJECT_DIR$/template.js" />
         <option value="$PROJECT_DIR$/functions/APPLICATION.php" />
         <option value="$PROJECT_DIR$/functions/prepareCalc.php" />
-        <option value="$PROJECT_DIR$/css/template.css" />
         <option value="$PROJECT_DIR$/functions/productsList.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/functions/feedback.php" />
         <option value="$PROJECT_DIR$/js/template.js" />
         <option value="$PROJECT_DIR$/template/modal.php" />
         <option value="$PROJECT_DIR$/js/modal.js" />
+        <option value="$PROJECT_DIR$/css/template.css" />
       </list>
     </option>
   </component>
@@ -269,12 +265,12 @@
       <workItem from="1559540964821" duration="7634000" />
       <workItem from="1559715428233" duration="20811000" />
       <workItem from="1559854520407" duration="7616000" />
-      <workItem from="1560066838856" duration="9602000" />
+      <workItem from="1560066838856" duration="10203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56920000" />
+    <option name="totallyTimeSpent" value="57521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -434,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="403" column="1" selection-start-line="403" selection-start-column="1" selection-end-line="403" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/prepareCalc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1248">
@@ -501,6 +490,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="405" column="1" selection-start-line="405" selection-start-column="1" selection-end-line="405" selection-end-column="1" />
         </state>
       </provider>
     </entry>
