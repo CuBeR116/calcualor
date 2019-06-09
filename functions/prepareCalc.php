@@ -7,38 +7,112 @@
  * Mail: cuber116@gmail.com
  */
 
-class prepareCalc {
+class prepareCalc
+{
   public $arProduct;
   
-  public function getProductJSON($name) {
+  public function __construct()
+  {
+    $this->lastAdded = '';
+  }
+  
+  public function getProductJSON($name)
+  {
     $arList = [];
     
     foreach ($this->arProduct as $keyProduct => $arProduct) {
       $arList[$keyProduct] = [
-        'NAME' => $arProduct['NAME'],
-        'PREVIEW_PICTURE' => $arProduct['PHOTOS'][0],
+        'NAME'            => $arProduct['NAME'],
+        'PREVIEW_PICTURE' => is_array($arProduct['PHOTOS']) ? array_shift($arProduct['PHOTOS']) : NULL,
       ];
     }
     $this->arProduct[$name]['OPTIONS']['BASE'] = [
-      'TYPE' => 'basic',
+      'TYPE'  => 'basic',
       'PRICE' => $this->arProduct[$name]['PRICE'],
-      'NAME' => $this->arProduct[$name]['NAME'],
+      'NAME'  => $this->arProduct[$name]['NAME'],
     ];
     return json_encode($this->arProduct[$name] + ['LIST' => $arList]);
   }
   
-  public function activeProduct() {
+  public function activeProduct()
+  {
   
   }
   
-  public function prepareProducts() {
+  public function prepareProducts()
+  {
   
+  }
+  
+  public function addProduct($name, $discount = true)
+  {
+    $this->arProduct[$name] = [
+      'NAME' => $name
+    ];
+    $this->lastAdded = $name;
+    
+    if($discount === false) {
+      $this->arProduct[$name]['DISCOUNT'] = false;
+    }
+    return $this;
+  }
+  
+  public function addPrice($price)
+  {
+    $this->arProduct[$this->lastAdded]['PRICE'] = $price;
+    return $this;
+  }
+  
+  public function addPhoto($path)
+  {
+    if (is_array($path)) {
+      foreach ($path as $valPhoto) {
+        if (file_exists($_SERVER['DOCUMENT_ROOT'] . $valPhoto)) {
+          $this->arProduct[$this->lastAdded]['PHOTOS'][$valPhoto] = $valPhoto;
+        }
+      }
+    } else {
+      if (file_exists($_SERVER['DOCUMENT_ROOT'] . $path)) {
+        $this->arProduct[$this->lastAdded]['PHOTOS'][$path] = $path;
+      }
+    }
+  }
+  
+  public function addDescription($description)
+  {
+    if (is_array($description)) {
+      foreach ($description as $valDescription) {
+        $this->arProduct[$this->lastAdded]['DESCRIPTION'][] = $valDescription;
+      }
+    } else {
+      $this->arProduct[$this->lastAdded]['DESCRIPTION'][] = $description;
+    }
+  }
+  
+  public function addOption($name, $price, $type = 'default', $after = NULL) {
+    $this->arProduct[$this->lastAdded]['OPTIONS'][$name] = [
+      'NAME' => $name,
+      'PRICE' => $price,
+      'TYPE' => $type,
+    ];
+    
+    if($after !== NULL) {
+      $this->arProduct[$this->lastAdded]['OPTIONS'][$name]['AFTER'] = $after;
+    }
+  }
+  public function addPhotosFromPath($path) {
+    if(file_exists($_SERVER['DOCUMENT_ROOT'] . $path)) {
+      foreach (glob($_SERVER['DOCUMENT_ROOT'] . $path."*.{jpg,png,gif}", GLOB_BRACE) as $filename) {
+        $fileInfo = pathinfo($filename);
+        $this->arProduct[$this->lastAdded]['PHOTOS'][$path . $fileInfo['basename']] = $path . $fileInfo['basename'];
+      }
+    }
   }
 }
 
 
-
-function debug($array) {
+function debug($array)
+{
   echo '<pre>';
   print_r($array);
   echo '</pre>';

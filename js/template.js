@@ -11,6 +11,7 @@ class Calc {
     this.discountPriceBlock = {};
     this.discount = 0;
     this.count = 1;
+    this.boolDiscount = 'true';
   }
 
   static setPrice(newPrice) {
@@ -33,6 +34,12 @@ class Calc {
     console.log(JSON);
     this.price = JSON.PRICE;
     this.discount = 0.75;
+    if (JSON.DISCOUNT === false) {
+      this.boolDiscount = false;
+    }
+    else {
+      this.boolDiscount = true;
+    }
 
     let description = $('<ul>', {
       class: 'calc__description-ul'
@@ -74,6 +81,7 @@ class Calc {
                   'data-type': 'count',
                   'data-key': 'BASE',
                   'data-global-count': '',
+                  readOnly: 'readonly',
                   value: 1,
                 }),
                 $('<button>', {
@@ -89,22 +97,26 @@ class Calc {
       ]
     });
 
-    let photo, text, name, optionKey, key, activePhoto;
+    let photo, text, name, optionKey, key, activePhoto, photoKey, objPhoto;
     let n = 0;
 
     if (JSON.PHOTOS) {
+      let keys = Object.keys(JSON.PHOTOS); //получаем ключи объекта в виде массива
+      let firstPhoto = (JSON.PHOTOS[keys[0]]); // первый элемент
+
+      console.log(firstPhoto);
       activePhoto = $('<img>', {
-        src: JSON.PHOTOS[0],
+        src: firstPhoto,
         'data-photo-active': '',
         class: 'calc__photo-activeImg',
       });
-      for (photo of JSON.PHOTOS) {
+      for (photoKey in JSON.PHOTOS) {
 
         photos.append($('<div>', {
-          'data-photo': photo,
+          'data-photo': JSON.PHOTOS[photoKey],
           class: ((n === 0) ? 'active ' : '') + 'calc__photo-item',
           html: $('<img>', {
-            src: photo,
+            src: JSON.PHOTOS[photoKey],
             class: 'calc__photo-item__img'
           })
         }));
@@ -245,13 +257,13 @@ class Calc {
         }
         else if (JSON.OPTIONS[optionKey].AFTER) {
           options.append($('<div>', {
-            css: {
-              'display': 'none',
-            },
             class: 'calc__options-item',
             html: [
               $('<div>', {
                 class: 'calc__options-item__top',
+                css: {
+                  'display': 'none',
+                },
                 html: [
                   $('<p>', {
                     html: JSON.OPTIONS[optionKey].NAME,
@@ -385,11 +397,12 @@ class Calc {
                     options,
                   ]
                 }),
+                console.log(typeof Calc.boolDiscount),
                 $('<div>', {
                   class: 'calc__price-item',
                   html: [
                     $('<p>', {
-                      class: 'calc__price-discount',
+                      class: ((Calc.boolDiscount === false) ? 'd-none' : 'calc__price-discount'),
                       html: 'Акция!',
                     }),
                     $('<div>', {
@@ -410,7 +423,7 @@ class Calc {
                       class: 'calc__price-bottom',
                       html: [
                         $('<span>', {
-                          html: this.priceFormat(JSON.PRICE * 0.75) + ' руб.',
+                          html: (Calc.boolDiscount === true)? this.priceFormat(JSON.PRICE * 0.75) + ' руб.': this.priceFormat(JSON.PRICE) + ' руб.',
                           'data-price': 'discount',
                           class: 'calc__price-discount__val'
                         })
@@ -429,6 +442,14 @@ class Calc {
     this.originalPriceBlock = $('[data-price="original"]');
     this.discountPriceBlock = $('[data-price="discount"]');
 
+    console.log(this.boolDiscount);
+    if (this.boolDiscount === false) {
+      this.discountPriceBlock.addClass('nonDiscount').closest('div').prepend($('<p>', {
+        html: 'Цена: '
+      }));
+      this.originalPriceBlock.closest('div').css('display', 'none');
+    }
+
     //Список функции
     this.optionSelect(JSON);
     orderBank();
@@ -439,7 +460,8 @@ class Calc {
   static optionSelect(JSON) {
     let form = $('[data-change]');
     form.on('change', 'input[type="checkbox"]', function (e) {
-      console.log(JSON);
+
+      console.log('changed');
       let $this = $(this);
       let price = Number(JSON.OPTIONS[$this.data('key')]['PRICE']);
       let key = $this.data('key');
@@ -452,6 +474,10 @@ class Calc {
         parentElement = $('[data-next="' + $this.data('child') + '"]');
       }
 
+      console.log(childElement);
+      // if(childElement.length > 0) {
+      //   childElement.fadeToggle().closest('div').fadeToggle();
+      // }
       form.find('[data-child="' + key + '"]').closest('div').fadeToggle();
 
 
@@ -491,6 +517,12 @@ class Calc {
             price = Number(countElement.val()) * Number(price);
           }
         }
+        else {
+          if (childElement.length > 0 && childElement.is(':checked')) {
+            price = Number(JSON.OPTIONS[childElement.data('key')]['PRICE']) + Number(price);
+            childElement.prop('checked', false);
+          }
+        }
 
         if (parentElement.length > 0) {
           price = Number(parentElement.val() * Number(price));
@@ -508,7 +540,13 @@ class Calc {
 
 
       Calc.originalPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');
-      Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75) + ' руб.');
+
+      if (Calc.boolDiscount === true) {
+        Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75) + ' руб.');
+      }
+      else {
+        Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');
+      }
 
       console.log(price);
     });
@@ -552,8 +590,15 @@ class Calc {
 
 
         input.val(Number(input.val()) + Number(value));
+
         Calc.originalPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');
-        Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75) + ' руб.');
+        if (Calc.boolDiscount === true) {
+          Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75) + ' руб.');
+        }
+        else {
+          Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');
+        }
+
 
         if (input.data('global-count') === '') {
         }
@@ -596,7 +641,7 @@ function orderBank() {
     let itemElement = form.find('[name="itemName_0"]');
     let strItems = '';
     let child;
-    if(Calc.count === undefined) Calc.count = 1;
+    if (Calc.count === undefined) Calc.count = 1;
 
     strItems = form.find('[name="productName"]').val() + ' x' + Calc.count.toString() + '; ';
 
