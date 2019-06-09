@@ -1,5 +1,5 @@
 $(window).on('load', function () {
-  feedback();
+
 });
 
 //Останов - Дизайн и $_POST на заказ
@@ -685,27 +685,6 @@ function selectNew() {
       success: function (data) {
         console.log(data);
         Calc.calcRender(data);
-      },
-      error: function () {
-        alert('Ошибка');
-      }
-    });
-  });
-}
-
-function feedback() {
-  $('[data-feedback]').on('submit', function (e) {
-    e.preventDefault();
-    let form = $(this);
-    $.ajax({
-      url: form.attr('action'),
-      type: 'post',
-      data: form.serializeArray(),
-      dataType: 'json',
-      success: function (data) {
-        console.log(data);
-        alert(data.message);
-        location.reload();
       },
       error: function () {
         alert('Ошибка');

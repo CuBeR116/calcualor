@@ -10,10 +10,11 @@
 
 <div data-modal-block
      class="calc-modal-container"
+     data-modal-close="close"
      id="feedback">
   <div class="calc-modal">
     <div class="calc-modal-close"
-         data-modal-close>❌
+         data-modal-close="close">❌
     </div>
     <div class="calc-modal-header">Оформить заявку</div>
     <div class="calc-modal-body">
