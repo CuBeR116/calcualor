@@ -16,7 +16,7 @@ $APPLICATION->echoIncludedCSS();
 <div class="calc-block">
   <script>
     window.onload = function() {
-      Calc.calcRender(<?= $prepareCalc->getProductJSON('Гармония 1690*860'); ?>);
+      Calc.calcRender(<?= $prepareCalc->getProductJSON('Кровать серии ГАРМОНИЯ 1290*900'); ?>);
     };
   </script>
 </div>
