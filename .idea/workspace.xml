@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71d8f059-2ada-4465-ab01-3cc0ec6ab912" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/images/illusion/illusion-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/illusion/illusion-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/illusion/illusion-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/illusion/illusion-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/illusion/illusion-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/illusion_with/illusion_with-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/illusion_with/illusion_with-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pufic/pufic-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pufic/pufic-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sport/sport-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sport/sport-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sport/sport-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sport/sport-4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/template.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/prepareCalc.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/prepareCalc.php" afterDir="false" />
@@ -74,8 +87,8 @@
       <file leaf-file-name="productsList.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions/productsList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
+            <state relative-caret-position="265">
+              <caret line="97" column="2" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -258,12 +271,12 @@
       <workItem from="1559540964821" duration="7634000" />
       <workItem from="1559715428233" duration="20811000" />
       <workItem from="1559854520407" duration="7616000" />
-      <workItem from="1560066838856" duration="8547000" />
+      <workItem from="1560066838856" duration="8598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55865000" />
+    <option name="totallyTimeSpent" value="55916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -488,8 +501,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/productsList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="392" lean-forward="true" selection-start-line="392" selection-end-line="392" />
+        <state relative-caret-position="265">
+          <caret line="97" column="2" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
         </state>
       </provider>
     </entry>
