@@ -162,14 +162,22 @@ class Calc {
               $('<div>', {
                 class: 'calc__options-item__top',
                 html: [
-                  $('<p>', {
-                    html: JSON.OPTIONS[optionKey].NAME,
-                  }),
-                  $('<input>', {
-                    name: optionKey,
-                    type: 'checkbox',
-                    'data-key': optionKey,
-                    val: JSON.OPTIONS[optionKey].NAME,
+                  $('<label>', {
+                    class: 'calc__options-item__top-label',
+                    html: [
+                      $('<p>', {
+                        html: JSON.OPTIONS[optionKey].NAME,
+                      }),
+                      $('<input>', {
+                        name: optionKey,
+                        type: 'checkbox',
+                        value: JSON.OPTIONS[optionKey].NAME,
+                        'data-key': optionKey
+                      }),
+                      $('<div>', {
+                        class: 'checkbox__controller'
+                      })
+                    ]
                   }),
                 ],
               }),
@@ -288,14 +296,22 @@ class Calc {
               $('<div>', {
                 class: 'calc__options-item__top',
                 html: [
-                  $('<p>', {
-                    html: JSON.OPTIONS[optionKey].NAME,
-                  }),
-                  $('<input>', {
-                    name: optionKey,
-                    type: 'checkbox',
-                    value: JSON.OPTIONS[optionKey].NAME,
-                    'data-key': optionKey
+                  $('<label>', {
+                    class: 'calc__options-item__top-label',
+                    html: [
+                      $('<p>', {
+                        html: JSON.OPTIONS[optionKey].NAME,
+                      }),
+                      $('<input>', {
+                        name: optionKey,
+                        type: 'checkbox',
+                        value: JSON.OPTIONS[optionKey].NAME,
+                        'data-key': optionKey
+                      }),
+                      $('<div>', {
+                        class: 'checkbox__controller'
+                      })
+                    ]
                   }),
                 ]
               }),
@@ -618,6 +634,7 @@ class Calc {
     });
 
     $('[data-click="openList"]').on('click', function (e) {
+      $(this).toggleClass('active');
       $('[data-list]').slideToggle();
     });
 

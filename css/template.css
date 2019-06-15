@@ -94,15 +94,19 @@
 }
 
 .calc__select__active-item:after {
-  content: 'â–½';
+  content: '↓';
   position: absolute;
   right: 0;
   width: 50px;
   height: 100%;
   top: 0;
   border-left: 2px solid #dddddd;
-  padding-top: 0.5em;
+  padding-top: 0.3em;
   text-align: center;
+}
+
+.calc__select__active-item.active:after {
+  content: '↑';
 }
 
 .calc__options-count button {
@@ -155,11 +159,11 @@
   position: relative;
 }
 
-.calc__options-item__top input[type="checkbox"]:after {
+.calc__options-item__top input[type="checkbox"] ~ .checkbox__controller:after {
   content: '';
   position: absolute;
-  top: -1px;
-  left: -12px;
+  top: 3px;
+  left: 0;
   width: 61px;
   height: 13px;
   border-radius: 13px;
@@ -174,6 +178,7 @@
   left: 12px;
   top: 5px;
   margin: 0;
+  display: none;
 }
 
 .calc__options-item__top {
@@ -181,11 +186,11 @@
   padding-left: 75px;
 }
 
-.calc__options-item__top input[type="checkbox"]:before {
+.calc__options-item__top input[type="checkbox"] ~ .checkbox__controller:before {
   content: '';
   position: absolute;
-  top: -7px;
-  left: -14px;
+  top: -3px;
+  left: 0;
   width: 22px;
   height: 22px;
   border-radius: 10px;
@@ -195,12 +200,12 @@
   z-index: 1;
 }
 
-.calc__options-item__top input[type="checkbox"]:checked:after {
+.calc__options-item__top input[type="checkbox"]:checked ~ .checkbox__controller:after {
   background: #9FD468;
 }
 
-.calc__options-item__top input[type="checkbox"]:checked:before {
-  left: 31px;
+.calc__options-item__top input[type="checkbox"]:checked ~ .checkbox__controller:before {
+  left: 41px;
 }
 
 .calc__options-item__hiddenInput input {
@@ -403,4 +408,8 @@
   color: #000;
   font-size: 22px;
   margin: 0;
+}
+
+.calc__options-item__top-label {
+  cursor: pointer;
 }
