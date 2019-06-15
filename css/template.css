@@ -94,19 +94,24 @@
 }
 
 .calc__select__active-item:after {
-  content: '↓';
+  content: '';
   position: absolute;
   right: 0;
   width: 50px;
   height: 100%;
   top: 0;
-  border-left: 2px solid #dddddd;
+  border-right: 2px solid #dddddd;
   padding-top: 0.3em;
   text-align: center;
+  background: url(../images/arrow-top.png) no-repeat 50%;
+  background-size: 48%;
+  transform: rotate(180deg);
 }
 
 .calc__select__active-item.active:after {
-  content: '↑';
+  transform: rotate(0);
+  border-left: 2px solid #dddddd;
+  border-right: 0;
 }
 
 .calc__options-count button {
