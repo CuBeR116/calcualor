@@ -101,7 +101,7 @@ $prepareCalc->arProduct = $arProduct;
 //После функции addProduct, начинается наполнение этого товара, а старый прекращается
 $prepareCalc->addProduct('Кровать серии ГАРМОНИЯ 1290*900');
 
-$prepareCalc->addPrice(15000);
+$prepareCalc->addPrice(13200);
 $prepareCalc->addPhoto('/images/garmony/garmony-1.jpg'); // Добавить только 1 фото
 // Добавить сразу несколько фотографии
 $prepareCalc->addPhoto([
