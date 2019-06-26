@@ -1,7 +1,7 @@
 $(window).on('load', function () {
 
 });
-
+let valDosctount = 3300;
 //Останов - Дизайн и $_POST на заказ
 
 class Calc {
@@ -29,6 +29,9 @@ class Calc {
     console.log(this.count);
     let returnPrice = this.price / this.count;
     return returnPrice;
+  }
+  static getDiscountPrice() {
+    return this.price - valDosctount;
   }
 
   static calcRender(JSON) {
@@ -440,7 +443,7 @@ class Calc {
                       class: 'calc__price-bottom',
                       html: [
                         $('<span>', {
-                          html: (Calc.boolDiscount === true) ? this.priceFormat(JSON.PRICE * 0.75) + ' руб.' : this.priceFormat(JSON.PRICE) + ' руб.',
+                          html: (Calc.boolDiscount === true) ? this.priceFormat(JSON.PRICE - valDosctount) + ' руб.' : this.priceFormat(JSON.PRICE) + ' руб.',
                           'data-price': 'discount',
                           class: 'calc__price-discount__val'
                         })
@@ -559,7 +562,7 @@ class Calc {
       Calc.originalPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');
 
       if (Calc.boolDiscount === true) {
-        Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75) + ' руб.');
+        Calc.discountPriceBlock.html(Calc.priceFormat(Calc.getDiscountPrice()) + ' руб.');
       }
       else {
         Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');
@@ -610,7 +613,7 @@ class Calc {
 
         Calc.originalPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');
         if (Calc.boolDiscount === true) {
-          Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price * 0.75) + ' руб.');
+          Calc.discountPriceBlock.html(Calc.priceFormat(Calc.getDiscountPrice()) + ' руб.');
         }
         else {
           Calc.discountPriceBlock.html(Calc.priceFormat(Calc.price) + ' руб.');

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71d8f059-2ada-4465-ab01-3cc0ec6ab912" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/functions/productsList.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/productsList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/template.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,17 +35,17 @@
       <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
+            <state relative-caret-position="10894">
               <caret line="419" column="1" selection-start-line="419" selection-start-column="1" selection-end-line="419" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="template.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/template.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="163" column="23" selection-start-line="163" selection-start-column="23" selection-end-line="163" selection-end-column="23" />
+            <state relative-caret-position="572">
+              <caret line="445" column="105" selection-start-line="445" selection-start-column="105" selection-end-line="445" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -67,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productsList.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="productsList.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions/productsList.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1872">
+            <state relative-caret-position="1170">
               <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
             </state>
           </provider>
@@ -115,9 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>global</find>
-      <find>Количество</find>
-      <find>data-select</find>
       <find>orderbank</find>
       <find>Кровать серии ГАРМОНИЯ 1790*860</find>
       <find>JSON.PHOTOS</find>
@@ -145,6 +143,9 @@
       <find>calc__select__active-item.active</find>
       <find>data-key</find>
       <find>label</find>
+      <find>price</find>
+      <find>Calc.discountPriceBlock</find>
+      <find>0.75</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,9 +168,9 @@
         <option value="$PROJECT_DIR$/functions/feedback.php" />
         <option value="$PROJECT_DIR$/template/modal.php" />
         <option value="$PROJECT_DIR$/js/modal.js" />
-        <option value="$PROJECT_DIR$/js/template.js" />
         <option value="$PROJECT_DIR$/css/template.css" />
         <option value="$PROJECT_DIR$/functions/productsList.php" />
+        <option value="$PROJECT_DIR$/js/template.js" />
       </list>
     </option>
   </component>
@@ -194,6 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,11 +228,14 @@
               <item name="sungatov.cub" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sungatov.cub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,18 +279,19 @@
       <workItem from="1559854520407" duration="7616000" />
       <workItem from="1560066838856" duration="10802000" />
       <workItem from="1560273475091" duration="710000" />
-      <workItem from="1560595263141" duration="3147000" />
+      <workItem from="1560595263141" duration="3402000" />
+      <workItem from="1561549610306" duration="361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61977000" />
+    <option name="totallyTimeSpent" value="62593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536913" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -460,13 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="18" column="87" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/feedback.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
@@ -488,24 +487,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="163" column="23" selection-start-line="163" selection-start-column="23" selection-end-line="163" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
+        <state relative-caret-position="10894">
           <caret line="419" column="1" selection-start-line="419" selection-start-column="1" selection-end-line="419" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/productsList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1872">
+        <state relative-caret-position="1170">
           <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="18" column="87" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="445" column="105" selection-start-line="445" selection-start-column="105" selection-end-line="445" selection-end-column="105" />
         </state>
       </provider>
     </entry>
