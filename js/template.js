@@ -1,7 +1,7 @@
 $(window).on('load', function () {
 
 });
-let valDosctount = 3300;
+let valDiscount = 3300;
 //Останов - Дизайн и $_POST на заказ
 
 class Calc {
@@ -31,7 +31,10 @@ class Calc {
     return returnPrice;
   }
   static getDiscountPrice() {
-    return this.price - valDosctount;
+    if (this.count === undefined) {
+      this.count = 1;
+    }
+    return this.price - valDiscount * this.count;
   }
 
   static calcRender(JSON) {
@@ -443,7 +446,7 @@ class Calc {
                       class: 'calc__price-bottom',
                       html: [
                         $('<span>', {
-                          html: (Calc.boolDiscount === true) ? this.priceFormat(JSON.PRICE - valDosctount) + ' руб.' : this.priceFormat(JSON.PRICE) + ' руб.',
+                          html: (Calc.boolDiscount === true) ? this.priceFormat(JSON.PRICE - valDiscount) + ' руб.' : this.priceFormat(JSON.PRICE) + ' руб.',
                           'data-price': 'discount',
                           class: 'calc__price-discount__val'
                         })
