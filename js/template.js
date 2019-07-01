@@ -215,14 +215,22 @@ class Calc {
               $('<div>', {
                 class: 'calc__options-item__top',
                 html: [
-                  $('<p>', {
-                    html: JSON.OPTIONS[optionKey].NAME,
-                  }),
-                  $('<input>', {
-                    name: optionKey,
-                    type: 'checkbox',
-                    val: JSON.OPTIONS[optionKey].NAME,
-                    'data-key': optionKey
+                  $('<label>', {
+                    class: 'calc__options-item__top-label',
+                    html: [
+                      $('<p>', {
+                        html: JSON.OPTIONS[optionKey].NAME,
+                      }),
+                      $('<input>', {
+                        name: optionKey,
+                        type: 'checkbox',
+                        val: JSON.OPTIONS[optionKey].NAME,
+                        'data-key': optionKey
+                      }),
+                      $('<div>', {
+                        class: 'checkbox__controller',
+                      })
+                    ]
                   }),
                 ]
               }),
