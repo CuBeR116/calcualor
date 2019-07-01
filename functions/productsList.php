@@ -115,7 +115,7 @@ $prepareCalc->arProduct = $arProduct;
 
 /* Гармония 1290*900 */
 //После функции addProduct, начинается наполнение этого товара, а старый прекращается
-$prepareCalc->addProduct('Кровать серии ГАРМОНИЯ 1290*900');
+$prepareCalc->addProduct('Кровать серии ГАРМОНИЯ 1690*900');
 
 $prepareCalc->addPrice(13200);
 $prepareCalc->addPhoto('/images/garmony/garmony-1.jpg'); // Добавить только 1 фото
@@ -150,8 +150,8 @@ $prepareCalc->addOption('Именной бортик', 1800, 'text');
 
 /* Конец Гармония 1290*900 */
 
-/* Кровать серии ГАРМАНОИЯ 1790*860 */
-$prepareCalc->addProduct('Кровать серии ГАРМАНОИЯ 1790*860');
+/* Кровать серии ГАРМОНИЯ 1790*860 */
+$prepareCalc->addProduct('Кровать серии ГАРМОНИЯ 1790*860');
 $prepareCalc->addPrice(14200);
 
 $prepareCalc->addPhoto([
@@ -180,10 +180,10 @@ $prepareCalc->addOption('Стразы на спинке кровати', 1500);
 $prepareCalc->addOption('Стразы на подушке', 150, 'default', 'Подушка (400х700)');
 $prepareCalc->addOption('Именной бортик', 1900, 'text');
 
-/* Конец Кровать серии ГАРМАНОИЯ 1790*860 */
+/* Конец Кровать серии ГАРМОНИЯ 1790*860 */
 
-/* Кровать серии ГАРМАНОИЯ 1890*860 */
-$prepareCalc->addProduct('Кровать серии ГАРМАНОИЯ 1890*860');
+/* Кровать серии ГАРМОНИЯ 1890*860 */
+$prepareCalc->addProduct('Кровать серии ГАРМОНИЯ 1890*860');
 $prepareCalc->addPrice(15200);
 
 $prepareCalc->addPhoto([
@@ -212,7 +212,7 @@ $prepareCalc->addOption('Стразы на спинке кровати', 1500);
 $prepareCalc->addOption('Стразы на подушке', 150, 'default', 'Подушка (400х700)');
 $prepareCalc->addOption('Именной бортик', 2000, 'text');
 
-/* Конец Кровать серии ГАРМАНОИЯ 1890*860 */
+/* Конец Кровать серии ГАРМОНИЯ 1890*860 */
 
 /* Кровать серии СПОРТ 1690*860 */
 $prepareCalc->addProduct('Кровать серии СПОРТ 1690*860');
