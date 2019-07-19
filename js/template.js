@@ -386,7 +386,7 @@ class Calc {
 
     }
 
-    console.log(JSON.PRICE);
+    console.log(JSON);
 
     $('.calc-block').addClass('container').html($('<div>', {
       class: 'calc-flex',
