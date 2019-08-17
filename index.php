@@ -10,16 +10,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/productsList.php';
 
 $APPLICATION->echoIncludedCSS();
 ?>
-
-<div class="calc-block">
-  <script>
-    window.onload = function() {
-      let calc1 = new Calc(<?= $prepareCalc->getProductJSON('Кровать серии ГАРМОНИЯ 1690*900'); ?>);
-      
-      calc1.init();
-    };
-  </script>
-</div>
+  <div id="calculator"></div>
+  <script src="/dist/build.js"></script>
 
 <?php
 $APPLICATION->includeFile('/template/modal.php');
