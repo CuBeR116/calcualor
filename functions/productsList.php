@@ -18,7 +18,8 @@ $APPLICATION = new APPLICATION();
 
 $APPLICATION->includeJS('/js/jquery-3.4.1.min.js');
 $APPLICATION->includeJS('/js/modal.js');
-$APPLICATION->includeJS('/js/template.js');
+$APPLICATION->includeJS('/js/vue.js');
+$APPLICATION->includeJS('/js/custom.js');
 
 $APPLICATION->includeCSS('/css/bootstrap.min.css');
 $APPLICATION->includeCSS('/css/template.css');
@@ -142,7 +143,7 @@ $prepareCalc->addDescription([
 $prepareCalc->addOption('Детский ортопедический матрас', 3700);
 $prepareCalc->addOption('Наматрасник', 2000);
 $prepareCalc->addOption('Стёганый наматрасник', 3000);
-$prepareCalc->addOption('Подушка (400х700)', 900);
+$prepareCalc->addOption('Подушка (400х700)', 900, 'count');
 $prepareCalc->addOption('Однотонный бортик (без наклеек)', 1300);
 $prepareCalc->addOption('Стразы на спинке кровати', 1500);
 $prepareCalc->addOption('Стразы на подушке', 150, 'default', 'Подушка (400х700)');

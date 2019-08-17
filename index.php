@@ -4,19 +4,19 @@
  * User: CuBeR116
  * Date: 01.06.2019
  * Time: 17:38
- * Mail: cuber116@gmail.com
  */
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/functions/productsList.php';
 
 $APPLICATION->echoIncludedCSS();
-
 ?>
 
 <div class="calc-block">
   <script>
     window.onload = function() {
-      Calc.calcRender(<?= $prepareCalc->getProductJSON('Кровать серии ГАРМОНИЯ 1690*900'); ?>);
+      let calc1 = new Calc(<?= $prepareCalc->getProductJSON('Кровать серии ГАРМОНИЯ 1690*900'); ?>);
+      
+      calc1.init();
     };
   </script>
 </div>

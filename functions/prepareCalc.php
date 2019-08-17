@@ -26,6 +26,9 @@ class prepareCalc
         'PREVIEW_PICTURE' => is_array($arProduct['PHOTOS']) ? array_shift($arProduct['PHOTOS']) : NULL,
       ];
     }
+    
+    $this->arProduct[$name]['PHOTOS'] = array_values($this->arProduct[$name]['PHOTOS']);
+    $this->arProduct[$name]['PHOTO'] = reset($this->arProduct[$name]['PHOTOS']);
     $this->arProduct[$name]['OPTIONS']['BASE'] = [
       'TYPE'  => 'basic',
       'PRICE' => $this->arProduct[$name]['PRICE'],
@@ -97,6 +100,7 @@ class prepareCalc
     ];
     
     if($after !== NULL) {
+      $this->arProduct[$this->lastAdded]['OPTIONS'][$after]['CHILD'] = $name;
       $this->arProduct[$this->lastAdded]['OPTIONS'][$name]['AFTER'] = $after;
     }
   }

@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71d8f059-2ada-4465-ab01-3cc0ec6ab912" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/calculator/count.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/calculator/products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/calculator/sum.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/getAjaxProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/getAjaxProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/prepareCalc.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/prepareCalc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/productsList.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/productsList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,92 +24,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="Default.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/TypeOptions/Default.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="18" column="87" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
+            <state relative-caret-position="260">
+              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/modal.php">
+      <file leaf-file-name="Count.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/TypeOptions/Count.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductSum.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/ProductSum.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="962">
+              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductList.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/ProductList.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1352">
+              <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
+              <folding>
+                <element signature="e#1153#1179#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/template.css">
+      <file leaf-file-name="SubmitButton.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/SubmitButton.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10894">
-              <caret line="419" column="1" selection-start-line="419" selection-start-column="1" selection-end-line="419" selection-end-column="1" />
+            <state relative-caret-position="78">
+              <caret line="2" column="92" selection-start-line="2" selection-start-column="92" selection-end-line="2" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/template.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1282">
-              <caret line="388" column="20" selection-start-line="388" selection-start-column="20" selection-end-line="388" selection-end-column="20" />
+            <state relative-caret-position="156">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/modal.js">
+      <file leaf-file-name="Input.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/TypeOptions/Input.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="494">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prepareCalc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/prepareCalc.php">
+      <file leaf-file-name="RightBlock.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/RightBlock.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+            <state relative-caret-position="-650">
+              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productsList.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/productsList.php">
+      <file leaf-file-name="Count.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Calculator/Count.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="117" column="57" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mailsend.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/old/mailsend.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="26" selection-end-line="44" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feedback.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/feedback.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APPLICATION.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/APPLICATION.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="208">
+              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -111,45 +124,49 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>цена</find>
-      <find>купить</find>
-      <find>transi</find>
-      <find>data-chil</find>
-      <find>calc__options-item</find>
-      <find>calc__options-item'</find>
-      <find>display</find>
-      <find>child</find>
-      <find>glob</find>
-      <find>originalPriceBlock</find>
-      <find>addclass</find>
-      <find>calc__price-discount</find>
-      <find>)?</find>
-      <find>) ?</find>
-      <find>calc__options-count</find>
-      <find>calc__price-discount__val</find>
-      <find>modal</find>
-      <find>data-target</find>
-      <find>data-modal-close</find>
-      <find>data-click</find>
-      <find>calc__select__active-item.active</find>
-      <find>data-key</find>
-      <find>label</find>
-      <find>price</find>
-      <find>Calc.discountPriceBlock</find>
-      <find>0.75</find>
-      <find>after</find>
-      <find>count</find>
-      <find>1290</find>
       <find>ГАРМАНОИЯ</find>
+      <find>.html</find>
+      <find>for</find>
+      <find>if</find>
+      <find>photo</find>
+      <find>sear</find>
+      <find>key</find>
+      <find>type</find>
+      <find>computed:</find>
+      <find>price</find>
+      <find>Кровать серии ГАРМОНИЯ 1690*900</find>
+      <find>after</find>
+      <find>parent</find>
+      <find>this.checked</find>
+      <find>ajax</find>
+      <find>calc__select__active-item</find>
+      <find>v-if=&quot;currentID === id&quot;</find>
+      <find>name</find>
+      <find>tabChange</find>
+      <find>list</find>
+      <find>productDownloaded</find>
+      <find>tin</find>
+      <find>cons</find>
+      <find>consol</find>
+      <find>console</find>
+      <find>itemName_</find>
+      <find>submit</find>
+      <find>xr</find>
+      <find>xh</find>
+      <find>$refs</find>
     </findStrings>
     <replaceStrings>
       <replace>ГАРМОНИЯ</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\OSPanel\domains\sungatov.cub\src</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -157,23 +174,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/calc.js" />
         <option value="$PROJECT_DIR$/new/index.php" />
         <option value="$PROJECT_DIR$/jquery-3.4.1.min.js" />
         <option value="$PROJECT_DIR$/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/template.css" />
-        <option value="$PROJECT_DIR$/functions/getAjaxProduct.php" />
         <option value="$PROJECT_DIR$/template.js" />
         <option value="$PROJECT_DIR$/functions/APPLICATION.php" />
-        <option value="$PROJECT_DIR$/functions/prepareCalc.php" />
         <option value="$PROJECT_DIR$/functions/feedback.php" />
         <option value="$PROJECT_DIR$/template/modal.php" />
         <option value="$PROJECT_DIR$/js/modal.js" />
-        <option value="$PROJECT_DIR$/css/template.css" />
-        <option value="$PROJECT_DIR$/functions/productsList.php" />
         <option value="$PROJECT_DIR$/js/template.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/functions/productsList.php" />
+        <option value="$PROJECT_DIR$/template/calculator/count.php" />
+        <option value="$PROJECT_DIR$/template/calculator/sum.vue" />
+        <option value="$PROJECT_DIR$/template/calculator/sum.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/custom.js" />
+        <option value="$PROJECT_DIR$/template/calculator/products.php" />
+        <option value="$PROJECT_DIR$/src/ProductList.vue" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeProduct/standart.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeProduct/Standart.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeProduct/Count.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeProduct/Input.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeOptions/Standart.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/Photo/MainPhoto.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/Photo/ListPhoto.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/LeftBlock/store/index.js" />
+        <option value="$PROJECT_DIR$/src/Calculator/LeftBlock/Description.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeOptions/index.js" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeOptions/store/index.js" />
+        <option value="$PROJECT_DIR$/functions/getAjaxProduct.php" />
+        <option value="$PROJECT_DIR$/functions/prepareCalc.php" />
+        <option value="$PROJECT_DIR$/api.php" />
+        <option value="$PROJECT_DIR$/src/Calculator/AddNew.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/ProductList.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/LeftBlock/ListPhoto.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/LeftBlock.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/LeftBlock/MainPhoto.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/Count.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/ProductSum.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeOptions/Default.vue" />
+        <option value="$PROJECT_DIR$/css/template.css" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeOptions/Input.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/TypeOptions/Count.vue" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/Calculator/RightBlock.vue" />
+        <option value="$PROJECT_DIR$/src/Calculator/SubmitButton.vue" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
       </list>
     </option>
   </component>
@@ -183,13 +233,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="10" />
-    <option name="width" value="1940" />
+    <option name="x" value="15" />
+    <option name="y" value="-25" />
+    <option name="width" value="1915" />
     <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -198,6 +253,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,12 +279,46 @@
             <path>
               <item name="sungatov.cub" type="b2602c69:ProjectViewProjectNode" />
               <item name="sungatov.cub" type="462c0819:PsiDirectoryNode" />
-              <item name="old" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungatov.cub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungatov.cub" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungatov.cub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungatov.cub" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="LeftBlock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungatov.cub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungatov.cub" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="LeftBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungatov.cub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungatov.cub" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="TypeOptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sungatov.cub" type="b2602c69:ProjectViewProjectNode" />
               <item name="sungatov.cub" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sungatov.cub" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sungatov.cub" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sungatov.cub" type="b2602c69:ProjectViewProjectNode" />
@@ -238,7 +328,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,6 +336,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\sungatov.cub\src\Calculator" />
+      <recent name="C:\OSPanel\domains\sungatov.cub\src\Calculator\TypeProduct" />
+      <recent name="C:\OSPanel\domains\sungatov.cub\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -287,29 +385,42 @@
       <workItem from="1561560265006" duration="1132000" />
       <workItem from="1561650164878" duration="406000" />
       <workItem from="1561978464849" duration="2001000" />
-      <workItem from="1563536687935" duration="137000" />
+      <workItem from="1563536687935" duration="1372000" />
+      <workItem from="1563894258537" duration="167000" />
+      <workItem from="1564743427298" duration="1118000" />
+      <workItem from="1564744642478" duration="1287000" />
+      <workItem from="1564756795604" duration="67000" />
+      <workItem from="1565281842018" duration="22430000" />
+      <workItem from="1565341733357" duration="22419000" />
+      <workItem from="1565519255454" duration="26863000" />
+      <workItem from="1565604419540" duration="605000" />
+      <workItem from="1565629893005" duration="131000" />
+      <workItem from="1565955383605" duration="711000" />
+      <workItem from="1566027783330" duration="2039000" />
+      <workItem from="1566029859369" duration="35697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66557000" />
+    <option name="totallyTimeSpent" value="181326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26778522" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31744966" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32905984" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32905984" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -327,145 +438,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/modal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/prepareCalc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/productsList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2652">
-          <caret line="108" column="43" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/APPLICATION.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calc.js" />
-    <entry file="file://$PROJECT_DIR$/functions/productsList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1898">
-          <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/prepareCalc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/APPLICATION.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template.css" />
-    <entry file="file://$PROJECT_DIR$/functions/productsList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2080">
-          <caret line="80" column="44" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/APPLICATION.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/prepareCalc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/calc.js" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/calc.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/calc.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/calc.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/calc.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/calc.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/calc.js" />
-    <entry file="file://$PROJECT_DIR$/new/index.php" />
-    <entry file="file://$PROJECT_DIR$/jquery-3.4.1.min.js" />
     <entry file="file://$PROJECT_DIR$/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/template.css" />
     <entry file="file://$PROJECT_DIR$/calc.js" />
     <entry file="file://$PROJECT_DIR$/template.js" />
-    <entry file="file://$PROJECT_DIR$/functions/getAjaxProduct.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/prepareCalc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/APPLICATION.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/old/mailsend.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -494,31 +470,297 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/template.css">
+    <entry file="file://$PROJECT_DIR$/js/jquery-3.4.1.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10894">
-          <caret line="419" column="1" selection-start-line="419" selection-start-column="1" selection-end-line="419" selection-end-column="1" />
+        <state relative-caret-position="156">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/template.js">
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1282">
-          <caret line="388" column="20" selection-start-line="388" selection-start-column="20" selection-end-line="388" selection-end-column="20" />
+        <state relative-caret-position="182">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/productsList.php">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="117" column="57" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="57" />
+        <state relative-caret-position="140">
+          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="63" column="22" lean-forward="true" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../calculator.cub/js/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="45" selection-start-line="45" selection-end-line="50" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/calculator/sum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../calculator.cub/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-962">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/calculator/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Downloads/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/calculator/count.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Count.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vuex/types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/TypeOptions/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/Calculator/LeftBlock/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/TypeOptions/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/LeftBlock/Description.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/productsList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="167" column="3" lean-forward="true" selection-start-line="167" selection-start-column="3" selection-end-line="167" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/APPLICATION.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/getAjaxProduct.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="18" column="87" selection-start-line="18" selection-start-column="87" selection-end-line="18" selection-end-column="87" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/prepareCalc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/LeftBlock/ListPhoto.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/LeftBlock/MainPhoto.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="67" column="74" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/AddNew.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/LeftBlock.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="544" column="1" selection-start-line="544" selection-start-column="1" selection-end-line="544" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/TypeOptions/Input.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/ProductList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1352">
+          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/Count.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/TypeOptions/Count.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/TypeOptions/Default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/ProductSum.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="962">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/RightBlock.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Calculator/SubmitButton.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="2" column="92" selection-start-line="2" selection-start-column="92" selection-end-line="2" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
+          <folding>
+            <element signature="e#1153#1179#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
