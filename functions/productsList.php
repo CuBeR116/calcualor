@@ -114,6 +114,64 @@ $arProduct['Гармония 1690*860'] = [
 $prepareCalc->arProduct = $arProduct;
 */
 
+
+/* Серия ИЛЛЮЗИЯ с выдвижным ящиком или дополнительным спальным местом 1790*860 */
+//После функции addProduct, начинается наполнение этого товара, а старый прекращается
+$prepareCalc->addProduct('Серия ИЛЛЮЗИЯ с выдвижным ящиком или дополнительным спальным местом 1790*860');
+
+$prepareCalc->addPrice(17200);
+$prepareCalc->addPhotosFromPath('/images/illusion_double/');
+
+// Добавить описание для товара
+$prepareCalc->addDescription(array(
+  'кровать - (Д*Ш) 1790*860*895;',
+  'нижнее спальное место 1600*800;',
+  'максимальный вес нагрузки - 150 кг.',
+));
+
+$prepareCalc->addOption('Детский ортопедический матрас 1700*800', 4000);
+$prepareCalc->addOption('Детский ортопедический матрас 1600*800', 3700);
+$prepareCalc->addOption('Наматрасник 1700*800', 2200);
+$prepareCalc->addOption('Наматрасник 1600*800', 2000);
+$prepareCalc->addOption('Стёганый наматрасник', 3200);
+$prepareCalc->addOption('Подушки (400х700) 2 шт.', 1800, 'count');
+$prepareCalc->addOption('Однотонный бортик (без наклеек)', 1400);
+$prepareCalc->addOption('Именной бортик', 1900, 'text');
+$prepareCalc->addOption('Стразы на спинке кровати', 1500);
+$prepareCalc->addOption('Стразы на выдвижном ящике', 1000);
+$prepareCalc->addOption('Стразы на подушках', 300, 'default', 'Подушки (400х700) 2 шт.');
+
+/* Конец Серия ИЛЛЮЗИЯ с выдвижным ящиком или дополнительным спальным местом 1790*860 */
+
+
+/* Серия ИЛЛЮЗИЯ с выдвижным ящиком или дополнительным спальным местом 1890*860 */
+//После функции addProduct, начинается наполнение этого товара, а старый прекращается
+$prepareCalc->addProduct('Серия ИЛЛЮЗИЯ с выдвижным ящиком или дополнительным спальным местом 1890*860');
+
+$prepareCalc->addPrice(18200);
+$prepareCalc->addPhotosFromPath('/images/illusion_double/');
+
+// Добавить описание для товара
+$prepareCalc->addDescription(array(
+  'кровать - (Д*Ш) 1890*860*945;',
+  'нижнее спальное место 1700*800;',
+  'максимальный вес нагрузки - 150 кг.',
+));
+
+$prepareCalc->addOption('Детский ортопедический матрас 1800*800', 4200);
+$prepareCalc->addOption('Детский ортопедический матрас 1700*800', 4000);
+$prepareCalc->addOption('Наматрасник 1800*800', 2400);
+$prepareCalc->addOption('Наматрасник 1700*800', 2200);
+$prepareCalc->addOption('Стёганый наматрасник', 3400);
+$prepareCalc->addOption('Подушки (400х700) 2 шт.', 1800, 'count');
+$prepareCalc->addOption('Однотонный бортик (без наклеек)', 1500);
+$prepareCalc->addOption('Именной бортик', 2000, 'text');
+$prepareCalc->addOption('Стразы на спинке кровати', 1500);
+$prepareCalc->addOption('Стразы на выдвижном ящике', 1000);
+$prepareCalc->addOption('Стразы на подушках', 300, 'default', 'Подушки (400х700) 2 шт.');
+
+/* Конец Серия ИЛЛЮЗИЯ с выдвижным ящиком или дополнительным спальным местом 1890*860 */
+
 /* Гармония 1290*900 */
 //После функции addProduct, начинается наполнение этого товара, а старый прекращается
 $prepareCalc->addProduct('Кровать серии ГАРМОНИЯ 1690*900');
@@ -121,7 +179,7 @@ $prepareCalc->addProduct('Кровать серии ГАРМОНИЯ 1690*900');
 $prepareCalc->addPrice(13200);
 $prepareCalc->addPhoto('/images/garmony/garmony-1.jpg'); // Добавить только 1 фото
 // Добавить сразу несколько фотографии
-$prepareCalc->addPhoto([
+$prepareCalc->addPhoto(array(
     '/images/garmony/garmony-2.jpg',
     '/images/garmony/garmony-3.jpg',
     '/images/garmony/garmony-4.jpg',
@@ -130,15 +188,15 @@ $prepareCalc->addPhoto([
     '/images/garmony/garmony-7.jpg',
     '/images/garmony/garmony-8.jpg',
     '/images/garmony/garmony-9.jpg',
-  ]
+  )
 );
 
 // Добавить описание для товара
 $prepareCalc->addDescription('кровать - (Д*Ш*В) 1690*860*895;');
-$prepareCalc->addDescription([
+$prepareCalc->addDescription(array(
   'спальное место 1600*800;',
   'максимальный вес нагрузки - 150 кг.',
-]);
+));
 
 $prepareCalc->addOption('Детский ортопедический матрас', 3700);
 $prepareCalc->addOption('Наматрасник', 2000);
@@ -155,7 +213,7 @@ $prepareCalc->addOption('Именной бортик', 1800, 'text');
 $prepareCalc->addProduct('Кровать серии ГАРМОНИЯ 1790*860');
 $prepareCalc->addPrice(14200);
 
-$prepareCalc->addPhoto([
+$prepareCalc->addPhoto(array(
     '/images/garmony/garmony-1.jpg',
     '/images/garmony/garmony-2.jpg',
     '/images/garmony/garmony-3.jpg',
@@ -165,7 +223,7 @@ $prepareCalc->addPhoto([
     '/images/garmony/garmony-7.jpg',
     '/images/garmony/garmony-8.jpg',
     '/images/garmony/garmony-9.jpg',
-  ]
+  )
 );
 
 $prepareCalc->addDescription('кровать - (Д*Ш*В) 1790*860*895;');
@@ -187,7 +245,7 @@ $prepareCalc->addOption('Именной бортик', 1900, 'text');
 $prepareCalc->addProduct('Кровать серии ГАРМОНИЯ 1890*860');
 $prepareCalc->addPrice(15200);
 
-$prepareCalc->addPhoto([
+$prepareCalc->addPhoto(array(
     '/images/garmony/garmony-1.jpg',
     '/images/garmony/garmony-2.jpg',
     '/images/garmony/garmony-3.jpg',
@@ -197,7 +255,7 @@ $prepareCalc->addPhoto([
     '/images/garmony/garmony-7.jpg',
     '/images/garmony/garmony-8.jpg',
     '/images/garmony/garmony-9.jpg',
-  ]
+  )
 );
 
 $prepareCalc->addDescription('кровать - (Д*Ш*В) 1890*860*945;');

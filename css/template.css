@@ -543,3 +543,34 @@
   align-items: center;
   justify-content: center;
 }
+
+.calc__select-remove {
+  position: absolute;
+  right: -46px;
+  top: 10px;
+  background: none;
+  border: 1px solid #fd2020;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding-top: 3px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.calc__select-remove:hover {
+  background: #ffa6a6;
+}
+
+.vuePreloader-block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #fff;
+  background-image: url(../images/preloader.gif);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}

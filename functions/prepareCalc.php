@@ -18,23 +18,23 @@ class prepareCalc
   
   public function getProductJSON($name)
   {
-    $arList = [];
+    $arList = array();
     
     foreach ($this->arProduct as $keyProduct => $arProduct) {
-      $arList[$keyProduct] = [
+      $arList[$keyProduct] = array(
         'NAME'            => $arProduct['NAME'],
         'PREVIEW_PICTURE' => is_array($arProduct['PHOTOS']) ? array_shift($arProduct['PHOTOS']) : NULL,
-      ];
+      );
     }
     
     $this->arProduct[$name]['PHOTOS'] = array_values($this->arProduct[$name]['PHOTOS']);
     $this->arProduct[$name]['PHOTO'] = reset($this->arProduct[$name]['PHOTOS']);
-    $this->arProduct[$name]['OPTIONS']['BASE'] = [
+    $this->arProduct[$name]['OPTIONS']['BASE'] = array(
       'TYPE'  => 'basic',
       'PRICE' => $this->arProduct[$name]['PRICE'],
       'NAME'  => $this->arProduct[$name]['NAME'],
-    ];
-    return json_encode($this->arProduct[$name] + ['LIST' => $arList]);
+    );
+    return json_encode($this->arProduct[$name] + array('LIST' => $arList));
   }
   
   public function activeProduct()
@@ -49,9 +49,9 @@ class prepareCalc
   
   public function addProduct($name, $discount = true)
   {
-    $this->arProduct[$name] = [
+    $this->arProduct[$name] = array(
       'NAME' => $name
-    ];
+    );
     $this->lastAdded = $name;
     
     if($discount === false) {
@@ -93,11 +93,11 @@ class prepareCalc
   }
   
   public function addOption($name, $price, $type = 'default', $after = NULL) {
-    $this->arProduct[$this->lastAdded]['OPTIONS'][$name] = [
+    $this->arProduct[$this->lastAdded]['OPTIONS'][$name] = array(
       'NAME' => $name,
       'PRICE' => $price,
       'TYPE' => $type,
-    ];
+    );
     
     if($after !== NULL) {
       $this->arProduct[$this->lastAdded]['OPTIONS'][$after]['CHILD'] = $name;

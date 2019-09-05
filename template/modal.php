@@ -18,7 +18,8 @@
     </div>
     <div class="calc-modal-header">Оформить заявку</div>
     <div class="calc-modal-body">
-      <form action="/functions/feedback.php" data-feedback>
+      <form action="/functions/feedback.php"
+            data-feedback>
         <input class="calc-modal-input"
                placeholder="Имя"
                maxlength="300"
@@ -51,10 +52,11 @@
     </div>
     <div class="calc-modal-footer">
       <div class="calc-modal-personal">
-        <p>Нажимая на кнопку, вы принимаете <a style="color:rgba(50, 136, 230, 1);"
-                                               href="/regulation.html"
-                                               target="_blank"
-                                               rel="nofollow">Положение</a> и
+        <p>Нажимая на кнопку, вы принимаете
+          <a style="color:rgba(50, 136, 230, 1);"
+             href="/regulation.html"
+             target="_blank"
+             rel="nofollow">Положение</a> и
           <a style="color:rgba(50, 136, 230, 1);"
              href="/consent.html"
              target="_blank"
